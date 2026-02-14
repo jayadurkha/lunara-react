@@ -84,8 +84,7 @@ import sEarrings12 from "../images/0silverEarrings12.jpg"
 
 
 export default function Collection() {
-            const [material,setMaterial]=
-    useState("all");
+           
   return (
     <div className="container mt-4">
 
@@ -126,7 +125,7 @@ export default function Collection() {
             {/* <!-- necklace 1 --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product1">
-                    <img src={necklace1} className="card-img-top"/>
+                    <img src={necklace1} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Luna Halo Moonstone Pendant</h5>
                         <p className="text-muted">Luxury</p>
@@ -138,7 +137,7 @@ export default function Collection() {
             {/* <!-- necklace 2 --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product2">
-                    <img src={necklace2} className="card-img-top"/>
+                    <img src={necklace2} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Celestia Moonstone Necklace</h5>
                         <p className="text-muted">Signature</p>
@@ -150,7 +149,7 @@ export default function Collection() {
             {/* <!-- necklace 3 --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product3">
-                    <img src={necklace3} className="card-img-top"/>
+                    <img src={necklace3} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Gold Moonstone Necklace</h5>
                         <p className="text-muted">classNameic</p>
@@ -162,7 +161,7 @@ export default function Collection() {
             {/* <!-- necklace 4 --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product4">
-                    <img src={necklace4}className="card-img-top"/>
+                    <img src={necklace4}className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Drop Moonstone Y-Necklace</h5>
                         <p className="text-muted">Luxury</p>
@@ -174,7 +173,7 @@ export default function Collection() {
             {/* <!-- necklace 5 --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product5">
-                    <img src={necklace5} className="card-img-top"/>
+                    <img src={necklace5} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Ethereal Oval Moonstone Charm</h5>
                         <p className="text-muted">Signature</p>
@@ -186,7 +185,7 @@ export default function Collection() {
             {/* <!-- necklace 6 --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product6">
-                    <img src={necklace6} className="card-img-top"/>
+                    <img src={necklace6} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Regal Radiance Moonstone Pendant</h5>
                         <p className="text-muted">Luxury</p>
@@ -198,7 +197,7 @@ export default function Collection() {
             {/* <!-- necklace 7 --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product7">
-                    <img src={necklace7} className="card-img-top"/>
+                    <img src={necklace7} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Vintage Glow Moonstone Necklace</h5>
                         <p className="text-muted">classNameic</p>
@@ -211,7 +210,7 @@ export default function Collection() {
             {/* <!-- necklace 8  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product8">
-                    <img src={necklace8} className="card-img-top"/>
+                    <img src={necklace8} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Moonlit Crescent Minimal Necklace</h5>
                         <p className="text-muted">Minimal</p>
@@ -223,7 +222,7 @@ export default function Collection() {
             {/* <!-- necklace 9  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product9">
-                    <img src={necklace9} className="card-img-top"/>
+                    <img src={necklace9} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Gold Moonstone Necklace</h5>
                         <p className="text-muted">Luxury</p> 
@@ -235,7 +234,7 @@ export default function Collection() {
             {/* <!-- necklace 10  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product10">
-                    <img src={necklace10} className="card-img-top"/>
+                    <img src={necklace10} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Luna Halo Moonstone Pendant</h5>
                         <p className="text-muted">classNameic</p> 
@@ -248,7 +247,7 @@ export default function Collection() {
             {/* <!-- necklace 11  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product11">
-                    <img src={necklace11} className="card-img-top"/>
+                    <img src={necklace11} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Oval Moonstone Charm</h5>
                         <p className="text-muted">Luxury</p> 
@@ -261,7 +260,7 @@ export default function Collection() {
             {/* <!-- necklace 12  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product12">
-                    <img src={necklace12} className="card-img-top"/>
+                    <img src={necklace12} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Gold Moonstone Necklace</h5>
                         <p className="text-muted">Premium</p> 
@@ -278,7 +277,7 @@ export default function Collection() {
           {/* <!-- ring 13  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product13">
-                    <img src={ring1} className="card-img-top "/>
+                    <img src={ring1} className="card-img-top" alt="jewellery"/>
 
                     <div className="card-body text-center">
                         <h5>Aurora Luna Gold Ring</h5>
@@ -291,7 +290,7 @@ export default function Collection() {
             {/* <!-- ring 14  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product14">
-                    <img src={ring2} className="card-img-top"/>
+                    <img src={ring2} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Eclipse Royale Ring</h5>
                         <p className="text-muted">Luxury</p> 
@@ -303,7 +302,7 @@ export default function Collection() {
             {/* <!-- ring 15  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product15">
-                    <img src={ring3} className="card-img-top"/>
+                    <img src={ring3} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Soluna Crown Gold Ring</h5>
                         <p className="text-muted">Luxury</p> 
@@ -315,7 +314,7 @@ export default function Collection() {
             {/* <!-- ring 16  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product16">
-                    <img src={ring4} className="card-img-top"/>
+                    <img src={ring4} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Moonfire Heirloom Ring</h5>
                         <p className="text-muted">Luxury</p> 
@@ -327,7 +326,7 @@ export default function Collection() {
             {/* <!-- ring 17  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product17">
-                    <img src={ring5} className="card-img-top "/>
+                    <img src={ring5} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Celestial Crest Gold Ring</h5>
                         <p className="text-muted">Luxury</p> 
@@ -339,7 +338,7 @@ export default function Collection() {
             {/* <!-- ring 18  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product18">
-                    <img src={ring6} className="card-img-top"/>
+                    <img src={ring6} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Gilded Moon Halo Ring</h5>
                         <p className="text-muted">Luxury</p> 
@@ -351,7 +350,7 @@ export default function Collection() {
             {/* <!-- ring 19  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product19">
-                    <img src={ring7} className="card-img-top"/>
+                    <img src={ring7} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Starlume Gold Ring</h5>
                         <p className="text-muted">Luxury</p> 
@@ -363,7 +362,7 @@ export default function Collection() {
             {/* <!-- ring 20  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product20">
-                    <img src={ring8} className="card-img-top"/>
+                    <img src={ring8} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Lunar Empress Ring</h5>
                         <p className="text-muted">Luxury</p> 
@@ -375,7 +374,7 @@ export default function Collection() {
             {/* <!-- ring 21  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product21">
-                    <img src={ring9} className="card-img-top"/>
+                    <img src={ring9} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Golden Orbit Ring</h5>
                         <p className="text-muted">Luxury</p> 
@@ -387,7 +386,7 @@ export default function Collection() {
             {/* <!-- ring 22  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product22">
-                    <img src={ring10} className="card-img-top"/>
+                    <img src={ring10} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Moonray Majesty Ring</h5>
                         <p className="text-muted">Luxury</p> 
@@ -399,7 +398,7 @@ export default function Collection() {
             {/* <!-- ring 23  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product23">
-                    <img src={ring11} className="card-img-top"/>
+                    <img src={ring11} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Astris Gold Ring</h5>
                         <p className="text-muted">Luxury</p> 
@@ -411,7 +410,7 @@ export default function Collection() {
             {/* <!-- ring 24  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product24">
-                    <img src={ring12} className="card-img-top"/>
+                    <img src={ring12} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Lunaria Royale Ring</h5>
                         <p className="text-muted">Luxury</p> 
@@ -428,7 +427,7 @@ export default function Collection() {
             {/* <!-- Earrings 25  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product25">
-                    <img src={earrings1} className="card-img-top"/>
+                    <img src={earrings1} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Celeste Glow Moonstone Earrings</h5>
                         <p className="text-muted">Luxury</p> 
@@ -440,7 +439,7 @@ export default function Collection() {
             {/* <!-- Earrings 26  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product26">
-                    <img src={earrings2} className="card-img-top"/>
+                    <img src={earrings2} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Luna Whisper Gold Drops</h5>
                         <p className="text-muted">Luxury</p> 
@@ -452,7 +451,7 @@ export default function Collection() {
             {/* <!-- Earrings 27  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product27">
-                    <img src={earrings3} className="card-img-top"/>
+                    <img src={earrings3} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Aurora Pearl Moonstone Hoops</h5>
                         <p className="text-muted">Luxury</p> 
@@ -464,7 +463,7 @@ export default function Collection() {
             {/* <!-- Earrings 28  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product28">
-                    <img src={earrings4} className="card-img-top"/>
+                    <img src={earrings4} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Stellar Dew Moonstone Earrings</h5>
                         <p className="text-muted">Luxury</p> 
@@ -476,7 +475,7 @@ export default function Collection() {
             {/* <!-- Earrings 29  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product29">
-                    <img src={earrings5} className="card-img-top"/>
+                    <img src={earrings5} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Moonveil Elegance Drops</h5>
                         <p className="text-muted">Luxury</p> 
@@ -488,7 +487,7 @@ export default function Collection() {
             {/* <!-- Earrings 30--> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product30">
-                    <img src={earrings6} className="card-img-top"/>
+                    <img src={earrings6} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Elysia Lunar Gold Earrings</h5>
                         <p className="text-muted">Luxury</p> 
@@ -500,7 +499,7 @@ export default function Collection() {
             {/* <!-- Earrings 31  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product31">
-                    <img src={earrings7} className="card-img-top"/>
+                    <img src={earrings7} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Nova Mist Moonstone Danglers</h5>
                         <p className="text-muted">Luxury</p> 
@@ -512,7 +511,7 @@ export default function Collection() {
             {/* <!-- Earrings 32  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product32">
-                    <img src={earrings8} className="card-img-top"/>
+                    <img src={earrings8} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Opaline Moonlight Earrings</h5>
                         <p className="text-muted">Luxury</p> 
@@ -524,7 +523,7 @@ export default function Collection() {
             {/* <!-- Earrings 33  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product33">
-                    <img src={earrings9} className="card-img-top"/>
+                    <img src={earrings9} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Serenova Moonstone Gold Drops</h5>
                         <p className="text-muted">Luxury</p> 
@@ -536,7 +535,7 @@ export default function Collection() {
             {/* <!-- Earrings 34  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product34">
-                    <img src={earrings10} className="card-img-top"/>
+                    <img src={earrings10} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Lunelle Radiance Earrings</h5>
                         <p className="text-muted">Luxury</p> 
@@ -548,7 +547,7 @@ export default function Collection() {
             {/* <!-- Earrings 35  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product35">
-                    <img src={earrings11} className="card-img-top"/>
+                    <img src={earrings11} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Astris Pearl Moonstone Hoops</h5>
                         <p className="text-muted">Luxury</p> 
@@ -560,7 +559,7 @@ export default function Collection() {
             {/* <!-- Earrings 36  --> */}
             <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product36">
-                    <img src={earrings12} className="card-img-top"/>
+                    <img src={earrings12} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Etherea Moonstone Gold Earrings</h5>
                         <p className="text-muted">Luxury</p> 
@@ -575,7 +574,7 @@ export default function Collection() {
             {/* <!-- necklace-S 37 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product37">
-                    <img src={snecklace1} className="card-img-top"/>
+                    <img src={snecklace1} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Luna Halo Moonstone Pendant</h5>
                         <p className="text-muted">Luxury</p>
@@ -587,7 +586,7 @@ export default function Collection() {
             {/* <!-- necklace-S 38 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product38">
-                    <img src={snecklace2} className="card-img-top"/>
+                    <img src={snecklace2} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Moonveil Silver Glow Necklace</h5>
                         <p className="text-muted">Luxury</p>
@@ -599,7 +598,7 @@ export default function Collection() {
             {/* <!-- necklace-S 39 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product39">
-                    <img src={snecklace3} className="card-img-top"/>
+                    <img src={snecklace3} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Celestia Moonstone Silver Pendant</h5>
                         <p className="text-muted">Luxury</p>
@@ -611,7 +610,7 @@ export default function Collection() {
             {/* <!-- necklace-S 40 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product40">
-                    <img src={snecklace4} className="card-img-top"/>
+                    <img src={snecklace4} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Aurora Mist Moonstone Necklace</h5>
                         <p className="text-muted">Luxury</p>
@@ -623,7 +622,7 @@ export default function Collection() {
             {/* <!-- necklace-S 41 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product41">
-                    <img src={snecklace5} className="card-img-top"/>
+                    <img src={snecklace5} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Ethereal Halo Moonstone Pendant</h5>
                         <p className="text-muted">Luxury</p>
@@ -635,7 +634,7 @@ export default function Collection() {
             {/* <!-- necklace-S 42 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product42">
-                    <img src={snecklace6} className="card-img-top"/>
+                    <img src={snecklace6} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Opaline Luna Silver Necklace</h5>
                         <p className="text-muted">Luxury</p>
@@ -647,7 +646,7 @@ export default function Collection() {
             {/* <!-- necklace-S 43 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product43">
-                    <img src={snecklace7} className="card-img-top"/>
+                    <img src={snecklace7} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Stellar Dew Moonstone Pendant</h5>
                         <p className="text-muted">Luxury</p>
@@ -659,7 +658,7 @@ export default function Collection() {
             {/* <!-- necklace-S 44 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product44">
-                    <img src={snecklace8} className="card-img-top"/>
+                    <img src={snecklace8} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Lunelle Radiance Silver Necklace</h5>
                         <p className="text-muted">Luxury</p>
@@ -671,7 +670,7 @@ export default function Collection() {
             {/* <!-- necklace-S 45 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product45">
-                    <img src={snecklace9} className="card-img-top"/>
+                    <img src={snecklace9} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Astris Moonlight Moonstone Pendant</h5>
                         <p className="text-muted">Luxury</p>
@@ -683,7 +682,7 @@ export default function Collection() {
             {/* <!-- necklace-S 46 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product46">
-                    <img src={snecklace10} className="card-img-top"/>
+                    <img src={snecklace10} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Nova Halo Moonstone Necklace</h5>
                         <p className="text-muted">Luxury</p>
@@ -695,7 +694,7 @@ export default function Collection() {
             {/* <!-- necklace-S 47 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product47">
-                    <img src={snecklace11} className="card-img-top"/>
+                    <img src={snecklace11} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Serena Moonstone Silver Drop</h5>
                         <p className="text-muted">Luxury</p>
@@ -707,7 +706,7 @@ export default function Collection() {
             {/* <!-- necklace-S 48 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product48">
-                    <img src={snecklace12} className="card-img-top"/>
+                    <img src={snecklace12} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Elysia Lunar Glow Necklace</h5>
                         <p className="text-muted">Luxury</p>
@@ -723,7 +722,7 @@ export default function Collection() {
             {/* <!-- Rings-S 49 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product49">
-                    <img src={sring1} className="card-img-top"/>
+                    <img src={sring1} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Elysia Lunar Glow Ring</h5>
                         <p className="text-muted">Luxury</p>
@@ -735,7 +734,7 @@ export default function Collection() {
             {/* <!-- Rings-S 50 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product50">
-                    <img src={sring2} className="card-img-top"/>
+                    <img src={sring2} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Selene Whisper Moon Ring</h5>
                         <p className="text-muted">Luxury</p>
@@ -747,7 +746,7 @@ export default function Collection() {
             {/* <!-- Rings-S 51 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product51">
-                    <img src={sring3} className="card-img-top"/>
+                    <img src={sring3} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Aurora Mooncrest Ring</h5>
                         <p className="text-muted">Luxury</p>
@@ -759,7 +758,7 @@ export default function Collection() {
             {/* <!-- Rings-S 52 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product52">
-                    <img src={sring4} className="card-img-top"/>
+                    <img src={sring4} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Celestia Blue Halo Ring</h5>
                         <p className="text-muted">Luxury</p>
@@ -771,7 +770,7 @@ export default function Collection() {
             {/* <!-- Rings-S 53 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product53">
-                    <img src={sring5} className="card-img-top"/>
+                    <img src={sring5} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Lunaris Veil Silver Ring</h5>
                         <p className="text-muted">Luxury</p>
@@ -783,7 +782,7 @@ export default function Collection() {
             {/* <!-- Rings-S 54 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product54">
-                    <img src={sring6} className="card-img-top"/>
+                    <img src={sring6} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Opaline Moon Embrace Ring</h5>
                         <p className="text-muted">Luxury</p>
@@ -795,7 +794,7 @@ export default function Collection() {
             {/* <!-- Rings-S 55 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product55">
-                    <img src={sring7} className="card-img-top"/>
+                    <img src={sring7} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Stella Frost Moon Ring</h5>
                         <p className="text-muted">Luxury</p>
@@ -807,7 +806,7 @@ export default function Collection() {
             {/* <!-- Rings-S 56 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product56">
-                    <img src={sring8} className="card-img-top"/>
+                    <img src={sring8} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Nyra Moonlight Bloom Ring</h5>
                         <p className="text-muted">Luxury</p>
@@ -819,7 +818,7 @@ export default function Collection() {
             {/* <!-- Rings-S 57 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product57">
-                    <img src={sring9} className="card-img-top"/>
+                    <img src={sring9} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Aurelia Lunar Charm Ring</h5>
                         <p className="text-muted">Luxury</p>
@@ -831,7 +830,7 @@ export default function Collection() {
             {/* <!-- Rings-S 58 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product58">
-                    <img src={sring10} className="card-img-top"/>
+                    <img src={sring10} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Isla Mystic Moon Ring</h5>
                         <p className="text-muted">Luxury</p>
@@ -843,7 +842,7 @@ export default function Collection() {
             {/* <!-- Rings-S 59 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product59">
-                    <img src={sring11} className="card-img-top"/>
+                    <img src={sring11} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Virelle Moonstone Grace Ring</h5>
                         <p className="text-muted">Luxury</p>
@@ -855,7 +854,7 @@ export default function Collection() {
             {/* <!-- Rings-S 60 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product60">
-                    <img src={sring12} className="card-img-top"/>
+                    <img src={sring12} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Elowen Celestial Silver Ring</h5>
                         <p className="text-muted">Luxury</p>
@@ -871,7 +870,7 @@ export default function Collection() {
             {/* <!-- Earrings-S 61 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product61">
-                    <img src={sEarrings1} className="card-img-top"/>
+                    <img src={sEarrings1} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Elowen Celestial Silver Ring</h5>
                         <p className="text-muted">Luxury</p>
@@ -883,7 +882,7 @@ export default function Collection() {
             {/* <!-- Earrings-S 62 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product62">
-                    <img src={sEarrings2} className="card-img-top"/>
+                    <img src={sEarrings2} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Selene Aura Oval Studs</h5>
                         <p className="text-muted">Luxury</p>
@@ -896,7 +895,7 @@ export default function Collection() {
                         {/* <!-- Earrings-S 63 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product63">
-                    <img src={sEarrings3} className="card-img-top"/>
+                    <img src={sEarrings3} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Lunaris Crescent Charm Earrings</h5>
                         <p className="text-muted">Luxury</p>
@@ -909,7 +908,7 @@ export default function Collection() {
                         {/* <!-- Earrings-S 64 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product64">
-                    <img src={sEarrings4} className="card-img-top"/>
+                    <img src={sEarrings4} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Nyra Moonbeam Trio Ring</h5>
                         <p className="text-muted">Luxury</p>
@@ -922,7 +921,7 @@ export default function Collection() {
                         {/* <!-- Earrings-S 65 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product65">
-                    <img src={sEarrings5} className="card-img-top"/>
+                    <img src={sEarrings5} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Aurelia Frost Halo Ring</h5>
                         <p className="text-muted">Luxury</p>
@@ -935,7 +934,7 @@ export default function Collection() {
                         {/* <!-- Earrings-S 66 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product66">
-                    <img src={sEarrings6} className="card-img-top"/>
+                    <img src={sEarrings6} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Virelle Pearl Dew Drop Earrings</h5>
                         <p className="text-muted">Luxury</p>
@@ -948,7 +947,7 @@ export default function Collection() {
                         {/* <!-- Earrings-S 67 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product67">
-                    <img src={sEarrings7} className="card-img-top"/>
+                    <img src={sEarrings7} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Celestia Twilight Chain Earrings</h5>
                         <p className="text-muted">Luxury</p>
@@ -961,7 +960,7 @@ export default function Collection() {
                         {/* <!-- Earrings-S 68 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product68">
-                    <img src={sEarrings8} className="card-img-top"/>
+                    <img src={sEarrings8} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Isla Moonwave Hoop Earrings</h5>
                         <p className="text-muted">Luxury</p>
@@ -974,7 +973,7 @@ export default function Collection() {
                         {/* <!-- Earrings-S 69 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product69">
-                    <img src={sEarrings9} className="card-img-top"/>
+                    <img src={sEarrings9} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Opaline Crystal Cascade Earrings</h5>
                         <p className="text-muted">Luxury</p>
@@ -987,7 +986,7 @@ export default function Collection() {
                         {/* <!-- Earrings-S 70 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product70">
-                    <img src={sEarrings10} className="card-img-top"/>
+                    <img src={sEarrings10} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Stella Drift Silver Drops</h5>
                         <p className="text-muted">Luxury</p>
@@ -1000,7 +999,7 @@ export default function Collection() {
                         {/* <!-- Earrings-S 71 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product71">
-                    <img src={sEarrings11} className="card-img-top"/>
+                    <img src={sEarrings11} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Elysia Triple Moon Earrings</h5>
                         <p className="text-muted">Luxury</p>
@@ -1013,7 +1012,7 @@ export default function Collection() {
                         {/* <!-- Earrings-S 72 --> */}
             <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product72">
-                    <img src={sEarrings12} className="card-img-top"/>
+                    <img src={sEarrings12} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Luna Arc Mystic Earrings</h5>
                         <p className="text-muted">Luxury</p>
@@ -1055,7 +1054,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={necklace1} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={necklace1} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal" alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1077,7 +1076,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={necklace2} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={necklace2} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Signature</p>
@@ -1099,7 +1098,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={necklace3} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={necklace3} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: classNameic</p>
@@ -1121,7 +1120,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={necklace4} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={necklace4} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1143,7 +1142,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={necklace5} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={necklace5} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Signature</p>
@@ -1165,7 +1164,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={necklace6} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={necklace6} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1187,7 +1186,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={necklace7} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={necklace7} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: classNameic</p>
@@ -1209,7 +1208,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={necklace8} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={necklace8} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Minimal</p>
@@ -1231,7 +1230,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={necklace9} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={necklace9} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1253,7 +1252,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={necklace10} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={necklace10} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: classNameic</p>
@@ -1275,7 +1274,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={necklace11} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={necklace11} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1297,7 +1296,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={necklace12} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={necklace12} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Premium</p>
@@ -1322,7 +1321,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={ring1} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={ring1} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1344,7 +1343,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={ring2} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={ring2} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1366,7 +1365,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={ring3} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={ring3} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1388,7 +1387,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={ring4} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={ring4} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1410,7 +1409,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={ring5} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={ring5} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1432,7 +1431,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={ring6} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={ring6} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1454,7 +1453,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={ring7} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={ring7} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1476,7 +1475,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={ring8} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={ring8} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1498,7 +1497,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={ring9} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={ring9} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1520,7 +1519,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={ring10} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={ring10} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1542,7 +1541,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={ring11} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={ring11} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1564,7 +1563,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={ring12} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={ring12} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1589,7 +1588,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={earrings1} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={earrings1} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1612,7 +1611,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={earrings2} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={earrings2} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1634,7 +1633,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={earrings3} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={earrings3} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1656,7 +1655,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={earrings4} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={earrings4} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1678,7 +1677,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={earrings5} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={earrings5} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1700,7 +1699,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={earrings6} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={earrings6} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1722,7 +1721,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={earrings7} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={earrings7} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1744,7 +1743,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={earrings8} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={earrings8} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1766,7 +1765,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={earrings9} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={earrings9} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1788,7 +1787,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={earrings10} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={earrings10} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1810,7 +1809,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={earrings11} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={earrings11} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1832,7 +1831,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={earrings12} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={earrings12} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
@@ -1857,7 +1856,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={snecklace1} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={snecklace1} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -1879,7 +1878,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={snecklace2} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={snecklace2} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -1901,7 +1900,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={snecklace3} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={snecklace3} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -1923,7 +1922,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={snecklace4} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={snecklace4} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -1945,7 +1944,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={snecklace5} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={snecklace5} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -1967,7 +1966,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={snecklace6} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={snecklace6} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -1989,7 +1988,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={snecklace7} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={snecklace7} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2011,7 +2010,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={snecklace8} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={snecklace8} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2033,7 +2032,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={snecklace9} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={snecklace9} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2055,7 +2054,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={snecklace10} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={snecklace10} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2077,7 +2076,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={snecklace11} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={snecklace11} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2099,7 +2098,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={snecklace12} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={snecklace12} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2124,7 +2123,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sring1} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sring1} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2146,7 +2145,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sring2} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sring2} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2168,7 +2167,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sring3} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sring3} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2190,7 +2189,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sring4} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sring4} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2212,7 +2211,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sring5} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sring5} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2234,7 +2233,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sring6} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sring6} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2256,7 +2255,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sring7} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sring7} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2278,7 +2277,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sring8} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sring8} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2300,7 +2299,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sring9} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sring9} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2322,7 +2321,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sring10} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sring10} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2344,7 +2343,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sring11} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sring11} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2366,7 +2365,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sring12} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sring12} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2392,7 +2391,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sEarrings1} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sEarrings1} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2414,7 +2413,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sEarrings2} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sEarrings2} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2436,7 +2435,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sEarrings3} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sEarrings3} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2458,7 +2457,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sEarrings4} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sEarrings4} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2480,7 +2479,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sEarrings5} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sEarrings5} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2502,7 +2501,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sEarrings6} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sEarrings6} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2524,7 +2523,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sEarrings7} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sEarrings7} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2546,7 +2545,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sEarrings8} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sEarrings8} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2568,7 +2567,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sEarrings9} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sEarrings9} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2590,7 +2589,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sEarrings10} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sEarrings10} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2612,7 +2611,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sEarrings11} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sEarrings11} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
@@ -2634,7 +2633,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={sEarrings12} className="img-fluid me-4" style={{ maxWidth: "300px" }}/>
+                <img src={sEarrings12} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal"/>
                 <div>
                     <p>Material: Silver</p>
                     <p>Style: Luxury</p>
