@@ -1,4 +1,3 @@
-import { useState } from "react";
 
 // image import
 import necklace1 from "../images/necklace1.jpg"
@@ -1054,7 +1053,7 @@ export default function Collection() {
                 <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body d-flex flex-column flex-md-row">
-                <img src={necklace1} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal" alt="jewellerymodal"/>
+                <img src={necklace1} className="img-fluid me-4" style={{ maxWidth: "300px" }} alt="jewellerymodal" />
                 <div>
                     <p>Material: Gold</p>
                     <p>Style: Luxury</p>
