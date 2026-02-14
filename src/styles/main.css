@@ -1,0 +1,393 @@
+:root {
+    --primary: #4B2E83;
+    --accent: #A8B2D1;
+    --bg: #FAFAFA;
+    --text: #2B2B2B;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* FIX LOGO SIZE IN NAVBAR */
+.logo-img {
+    height: 45px;        /* control logo height */
+    width: auto;         /* keep aspect ratio */
+    object-fit: contain; /* prevent stretching */
+}
+
+
+.hero {
+    min-height: 13cm;
+    width: 100%;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(15, 15, 30, 0.65),
+            rgba(15, 15, 30, 0.65)
+        ),
+        url("../images/herohome1.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.card {
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(168,178,209,0.6);
+}
+
+.btn-primary {
+    background: var(--primary);
+    border: none;
+}
+
+footer {
+    background: #1f1f2e;
+}
+
+/* PRODUCT CARD FIX */
+.product-card .card {
+    height: 100%;
+    border-radius: 14px;
+}
+
+/* IMAGE FIX – SAME SIZE FOR ALL */
+.product-card img {
+    width: 100%;
+    height: 260px;              /* FIXED HEIGHT */
+    object-fit: contain;        /* Keeps jewelry proportion */
+    padding: 20px;
+    background: #ffffff;
+}
+
+/* CARD BODY ALIGNMENT */
+.card-body {
+    padding: 18px;
+}
+
+.card-body h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-body p {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+/* PRICE STYLE */
+.card-body .fw-bold {
+    font-size: 16px;
+}
+
+
+/* EDITORIAL HOME */
+.editorial-home {
+    background: #faf9f7;
+}
+
+.editorial-tag {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.editorial-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.editorial-text {
+    font-size: 15px;
+    color: #555;
+    max-width: 380px;
+    margin-bottom: 24px;
+}
+
+.editorial-link {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--primary);
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.editorial-link:hover {
+    border-color: var(--primary);
+}
+
+/* IMAGE STYLE */
+.editorial-image {
+    border-radius: 26px;
+    overflow: hidden;
+}
+
+.editorial-image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+}
+
+
+
+
+
+/* SIGNATURE PIECES */
+.signature-item {
+    text-align: center;
+}
+
+.signature-item img {
+    width: 100%;
+    height: 380px;
+    object-fit: contain;
+    background: #fff;
+    padding: 40px;
+    border-radius: 22px;
+    transition: transform 0.4s ease;
+}
+
+.signature-item:hover img {
+    transform: translateY(-10px);
+}
+
+.signature-item p {
+    margin-top: 14px;
+    font-weight: 600;
+}
+
+
+
+/* FILTER CONTAINER */
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+
+/* FILTER BUTTON */
+.filter-btn {
+    padding: 7px 18px;
+    border-radius: 30px;
+    border: 1px solid #060618;
+    background: #ffffff;
+    color: #333;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+/* HOVER */
+.filter-btn:hover {
+    background: #201d32;
+    border-color: var(--primary);
+}
+
+/* ACTIVE (SELECTED) */
+.filter-btn.active {
+    background: linear-gradient(135deg, #4B2E83, #6b4bb5);
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 8px 18px rgba(75,46,131,0.35);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT PAGE STYLES */
+.about-hero {
+    background:
+        linear-gradient(
+            rgba(15, 15, 30, 0.6),
+            rgba(15, 15, 30, 0.6)
+        ),
+        url("../images/aboutheader.jpg");  /* your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    color: #ffffff;
+}
+
+
+.about-title {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.about-subtitle {
+    color: #777;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.about-content {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.about-img {
+    max-width: 420px;
+    border-radius: 20px;
+}
+
+.founder-section {
+    background: #fafafa;
+    padding: 70px 0;
+}
+
+.founder-text {
+    max-width: 750px;
+    margin: 20px auto;
+    font-style: italic;
+    color: #555;
+}
+
+.founder-name {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.values-section {
+    padding: 80px 0;
+}
+
+
+/* SOFT ANIMATIONS */
+.fade-left {
+    animation: fadeLeft 1s ease;
+}
+
+.fade-right {
+    animation: fadeRight 1s ease;
+}
+
+.fade-up {
+    animation: fadeUp 1s ease;
+}
+
+@keyframes fadeLeft {
+    from {opacity:0; transform:translateX(-40px);}
+    to {opacity:1; transform:translateX(0);}
+}
+
+@keyframes fadeRight {
+    from {opacity:0; transform:translateX(40px);}
+    to {opacity:1; transform:translateX(0);}
+}
+
+@keyframes fadeUp {
+    from {opacity:0; transform:translateY(40px);}
+    to {opacity:1; transform:translateY(0);}
+}
+
+.philosophy-section,
+.emotion-section {
+    padding: 80px 0;
+    background: #ffffff;
+    
+}
+
+.philosophy-text,
+.emotion-text {
+    max-width: 750px;
+    margin: auto;
+    color: #666;
+    line-height: 1.9;
+}
+
+.craft-section {
+    padding: 90px 0;
+    background: #fafafa;
+}
+
+
+
+
+/* VALUE CARD – CREATIVE LUXURY MOTION */
+.value-card {
+    padding: 35px 25px;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* SOFT FLOATING ANIMATION */
+.value-animate {
+    animation: floatBox 5s ease-in-out infinite;
+}
+
+/* DIFFERENT TIMING FOR EACH */
+.value-animate:nth-child(1) { animation-delay: 0s; }
+.value-animate:nth-child(2) { animation-delay: 1s; }
+.value-animate:nth-child(3) { animation-delay: 2s; }
+
+/* HOVER EFFECT */
+.value-card:hover {
+    transform: translateY(-14px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(75,46,131,0.15);
+}
+
+/* SOFT LIGHT GLOW */
+.value-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top, rgba(168,178,209,0.25), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.value-card:hover::after {
+    opacity: 1;
+}
+
+/* FLOAT KEYFRAMES */
+@keyframes floatBox {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+
+
+
+
+
