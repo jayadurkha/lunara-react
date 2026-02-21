@@ -1,4 +1,4 @@
-
+import { useState } from "react";
 // image import
 import necklace1 from "../images/necklace1.jpg"
 import necklace2 from "../images/necklace2.jpg"
@@ -83,6 +83,8 @@ import sEarrings12 from "../images/0silverEarrings12.jpg"
 
 
 export default function Collection() {
+    const [material, setMaterial] = useState("all");
+    const [style, setStyle] = useState("all");
            
   return (
     <div className="container mt-4">
@@ -95,17 +97,29 @@ export default function Collection() {
     <div className="container d-flex flex-wrap justify-content-between">
         <div>
             <strong>Material:</strong>
-            <button className="btn btn-outline-secondary btn-sm filter-btn" data-filter="material" data-value="all">All</button>
-            <button className="btn btn-outline-secondary btn-sm filter-btn" data-filter="material" data-value="gold">Gold</button>
-            <button className="btn btn-outline-secondary btn-sm filter-btn" data-filter="material" data-value="silver">Silver</button>
+           <button className="btn btn-outline-secondary btn-sm"
+onClick={() => setMaterial("all")}>All</button>
+
+<button className="btn btn-outline-secondary btn-sm"
+onClick={() => setMaterial("gold")}>Gold</button>
+
+<button className="btn btn-outline-secondary btn-sm"
+onClick={() => setMaterial("silver")}>Silver</button>
         </div>
 
         <div>
             <strong>Style:</strong>
-            <button className="btn btn-outline-secondary btn-sm filter-btn" data-filter="style" data-value="all">All</button>
-            <button className="btn btn-outline-secondary btn-sm filter-btn" data-filter="style" data-value="Necklaces">Necklaces</button>
-            <button className="btn btn-outline-secondary btn-sm filter-btn" data-filter="style" data-value="Rings">Rings</button>
-            <button className="btn btn-outline-secondary btn-sm filter-btn" data-filter="style" data-value="Earrings">Earrings</button>
+            <button className="btn btn-outline-secondary btn-sm"
+onClick={() => setStyle("all")}>All</button>
+
+<button className="btn btn-outline-secondary btn-sm"
+onClick={() => setStyle("Necklaces")}>Necklaces</button>
+
+<button className="btn btn-outline-secondary btn-sm"
+onClick={() => setStyle("Rings")}>Rings</button>
+
+<button className="btn btn-outline-secondary btn-sm"
+onClick={() => setStyle("Earrings")}>Earrings</button>
         </div>
     </div>
 </section>
@@ -122,7 +136,14 @@ export default function Collection() {
 {/* <!--neclace-gold--> */}
 
             {/* <!-- necklace 1 --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product1">
                     <img src={necklace1} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -134,7 +155,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- necklace 2 --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product2">
                     <img src={necklace2} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -146,7 +174,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- necklace 3 --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product3">
                     <img src={necklace3} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -158,7 +193,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- necklace 4 --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product4">
                     <img src={necklace4}className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -170,7 +212,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- necklace 5 --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product5">
                     <img src={necklace5} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -182,7 +231,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- necklace 6 --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product6">
                     <img src={necklace6} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -194,7 +250,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- necklace 7 --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product7">
                     <img src={necklace7} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -207,7 +270,14 @@ export default function Collection() {
 
 
             {/* <!-- necklace 8  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product8">
                     <img src={necklace8} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -219,7 +289,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- necklace 9  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product9">
                     <img src={necklace9} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -231,7 +308,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- necklace 10  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product10">
                     <img src={necklace10} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -244,7 +328,14 @@ export default function Collection() {
 
 
             {/* <!-- necklace 11  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product11">
                     <img src={necklace11} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -257,7 +348,14 @@ export default function Collection() {
 
 
             {/* <!-- necklace 12  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product12">
                     <img src={necklace12} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -274,8 +372,14 @@ export default function Collection() {
 {/* <!--rings-gold--> */}
 
           {/* <!-- ring 13  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product13">
+<div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product13">
                     <img src={ring1} className="card-img-top" alt="jewellery"/>
 
                     <div className="card-body text-center">
@@ -287,8 +391,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- ring 14  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product14">
+<div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product14">
                     <img src={ring2} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Eclipse Royale Ring</h5>
@@ -299,8 +409,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- ring 15  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product15">
+<div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product15">
                     <img src={ring3} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Soluna Crown Gold Ring</h5>
@@ -311,8 +427,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- ring 16  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product16">
+<div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product16">
                     <img src={ring4} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Moonfire Heirloom Ring</h5>
@@ -323,8 +445,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- ring 17  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product17">
+<div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product17">
                     <img src={ring5} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Celestial Crest Gold Ring</h5>
@@ -335,8 +463,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- ring 18  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product18">
+<div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product18">
                     <img src={ring6} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Gilded Moon Halo Ring</h5>
@@ -347,8 +481,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- ring 19  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product19">
+<div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product19">
                     <img src={ring7} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Starlume Gold Ring</h5>
@@ -359,8 +499,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- ring 20  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product20">
+<div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product20">
                     <img src={ring8} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Lunar Empress Ring</h5>
@@ -371,8 +517,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- ring 21  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product21">
+<div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product21">
                     <img src={ring9} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Golden Orbit Ring</h5>
@@ -383,8 +535,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- ring 22  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product22">
+<div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product22">
                     <img src={ring10} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Moonray Majesty Ring</h5>
@@ -395,8 +553,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- ring 23  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product23">
+<div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product23">
                     <img src={ring11} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Astris Gold Ring</h5>
@@ -407,8 +571,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- ring 24  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Rings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product24">
+<div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product24">
                     <img src={ring12} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Lunaria Royale Ring</h5>
@@ -424,8 +594,26 @@ export default function Collection() {
 {/* <!--Earrings-gold--> */}
 
             {/* <!-- Earrings 25  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product25">
+            <div className="col-md-3 product-card"
+style={{
+visibility:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "visible"
+: "hidden",
+
+position:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "relative"
+: "absolute",
+
+height:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "auto"
+: "0px"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product25">
                     <img src={earrings1} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Celeste Glow Moonstone Earrings</h5>
@@ -436,8 +624,26 @@ export default function Collection() {
             </div>
 
             {/* <!-- Earrings 26  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product26">
+            <div className="col-md-3 product-card"
+style={{
+visibility:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "visible"
+: "hidden",
+
+position:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "relative"
+: "absolute",
+
+height:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "auto"
+: "0px"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product26">
                     <img src={earrings2} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Luna Whisper Gold Drops</h5>
@@ -448,8 +654,26 @@ export default function Collection() {
             </div>
 
             {/* <!-- Earrings 27  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product27">
+            <div className="col-md-3 product-card"
+style={{
+visibility:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "visible"
+: "hidden",
+
+position:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "relative"
+: "absolute",
+
+height:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "auto"
+: "0px"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product27">
                     <img src={earrings3} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Aurora Pearl Moonstone Hoops</h5>
@@ -460,8 +684,26 @@ export default function Collection() {
             </div>
 
             {/* <!-- Earrings 28  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product28">
+            <div className="col-md-3 product-card"
+style={{
+visibility:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "visible"
+: "hidden",
+
+position:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "relative"
+: "absolute",
+
+height:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "auto"
+: "0px"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product28">
                     <img src={earrings4} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Stellar Dew Moonstone Earrings</h5>
@@ -472,8 +714,26 @@ export default function Collection() {
             </div>
 
             {/* <!-- Earrings 29  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product29">
+            <div className="col-md-3 product-card"
+style={{
+visibility:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "visible"
+: "hidden",
+
+position:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "relative"
+: "absolute",
+
+height:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "auto"
+: "0px"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product29">
                     <img src={earrings5} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Moonveil Elegance Drops</h5>
@@ -484,8 +744,26 @@ export default function Collection() {
             </div>
 
             {/* <!-- Earrings 30--> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product30">
+            <div className="col-md-3 product-card"
+style={{
+visibility:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "visible"
+: "hidden",
+
+position:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "relative"
+: "absolute",
+
+height:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "auto"
+: "0px"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product30">
                     <img src={earrings6} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Elysia Lunar Gold Earrings</h5>
@@ -496,8 +774,26 @@ export default function Collection() {
             </div>
 
             {/* <!-- Earrings 31  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product31">
+            <div className="col-md-3 product-card"
+style={{
+visibility:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "visible"
+: "hidden",
+
+position:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "relative"
+: "absolute",
+
+height:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "auto"
+: "0px"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product31">
                     <img src={earrings7} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Nova Mist Moonstone Danglers</h5>
@@ -508,8 +804,26 @@ export default function Collection() {
             </div>
 
             {/* <!-- Earrings 32  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product32">
+            <div className="col-md-3 product-card"
+style={{
+visibility:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "visible"
+: "hidden",
+
+position:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "relative"
+: "absolute",
+
+height:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "auto"
+: "0px"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product32">
                     <img src={earrings8} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Opaline Moonlight Earrings</h5>
@@ -520,8 +834,26 @@ export default function Collection() {
             </div>
 
             {/* <!-- Earrings 33  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product33">
+            <div className="col-md-3 product-card"
+style={{
+visibility:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "visible"
+: "hidden",
+
+position:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "relative"
+: "absolute",
+
+height:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "auto"
+: "0px"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product33">
                     <img src={earrings9} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Serenova Moonstone Gold Drops</h5>
@@ -532,8 +864,26 @@ export default function Collection() {
             </div>
 
             {/* <!-- Earrings 34  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product34">
+            <div className="col-md-3 product-card"
+style={{
+visibility:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "visible"
+: "hidden",
+
+position:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "relative"
+: "absolute",
+
+height:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "auto"
+: "0px"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product34">
                     <img src={earrings10} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Lunelle Radiance Earrings</h5>
@@ -544,8 +894,26 @@ export default function Collection() {
             </div>
 
             {/* <!-- Earrings 35  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product35">
+            <div className="col-md-3 product-card"
+style={{
+visibility:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "visible"
+: "hidden",
+
+position:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "relative"
+: "absolute",
+
+height:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "auto"
+: "0px"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product35">
                     <img src={earrings11} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Astris Pearl Moonstone Hoops</h5>
@@ -556,8 +924,26 @@ export default function Collection() {
             </div>
 
             {/* <!-- Earrings 36  --> */}
-            <div className="col-md-3 product-card" data-material="gold" data-style="Earrings">
-                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product36">
+            <div className="col-md-3 product-card"
+style={{
+visibility:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "visible"
+: "hidden",
+
+position:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "relative"
+: "absolute",
+
+height:
+(material === "all" || material === "gold") &&
+(style === "all" || style === "Earrings")
+? "auto"
+: "0px"
+}}>                <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product36">
                     <img src={earrings12} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
                         <h5>Etherea Moonstone Gold Earrings</h5>
@@ -571,7 +957,14 @@ export default function Collection() {
 {/* <!--neclace-Silver--> */}
 
             {/* <!-- necklace-S 37 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product37">
                     <img src={snecklace1} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -583,7 +976,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- necklace-S 38 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product38">
                     <img src={snecklace2} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -595,7 +995,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- necklace-S 39 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product39">
                     <img src={snecklace3} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -607,7 +1014,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- necklace-S 40 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product40">
                     <img src={snecklace4} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -619,7 +1033,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- necklace-S 41 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product41">
                     <img src={snecklace5} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -631,7 +1052,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- necklace-S 42 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product42">
                     <img src={snecklace6} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -643,7 +1071,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- necklace-S 43 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product43">
                     <img src={snecklace7} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -655,7 +1090,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- necklace-S 44 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product44">
                     <img src={snecklace8} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -667,7 +1109,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- necklace-S 45 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product45">
                     <img src={snecklace9} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -679,7 +1128,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- necklace-S 46 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product46">
                     <img src={snecklace10} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -691,7 +1147,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- necklace-S 47 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product47">
                     <img src={snecklace11} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -703,7 +1166,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- necklace-S 48 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Necklaces">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Necklaces")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product48">
                     <img src={snecklace12} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -719,7 +1189,14 @@ export default function Collection() {
 {/* <!--Rings-Silver--> */}
 
             {/* <!-- Rings-S 49 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product49">
                     <img src={sring1} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -731,7 +1208,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- Rings-S 50 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product50">
                     <img src={sring2} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -743,7 +1227,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- Rings-S 51 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product51">
                     <img src={sring3} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -755,7 +1246,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- Rings-S 52 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product52">
                     <img src={sring4} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -767,7 +1265,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- Rings-S 53 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product53">
                     <img src={sring5} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -779,7 +1284,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- Rings-S 54 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product54">
                     <img src={sring6} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -791,7 +1303,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- Rings-S 55 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product55">
                     <img src={sring7} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -803,7 +1322,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- Rings-S 56 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product56">
                     <img src={sring8} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -815,7 +1341,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- Rings-S 57 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product57">
                     <img src={sring9} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -827,7 +1360,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- Rings-S 58 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product58">
                     <img src={sring10} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -839,7 +1379,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- Rings-S 59 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product59">
                     <img src={sring11} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -851,7 +1398,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- Rings-S 60 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Rings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Rings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product60">
                     <img src={sring12} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -867,7 +1421,14 @@ export default function Collection() {
 
 
             {/* <!-- Earrings-S 61 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Earrings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product61">
                     <img src={sEarrings1} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -879,7 +1440,14 @@ export default function Collection() {
             </div>
 
             {/* <!-- Earrings-S 62 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Earrings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product62">
                     <img src={sEarrings2} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -892,7 +1460,14 @@ export default function Collection() {
 
 
                         {/* <!-- Earrings-S 63 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Earrings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product63">
                     <img src={sEarrings3} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -905,7 +1480,14 @@ export default function Collection() {
 
 
                         {/* <!-- Earrings-S 64 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Earrings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product64">
                     <img src={sEarrings4} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -918,7 +1500,14 @@ export default function Collection() {
 
 
                         {/* <!-- Earrings-S 65 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Earrings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product65">
                     <img src={sEarrings5} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -931,7 +1520,14 @@ export default function Collection() {
 
 
                         {/* <!-- Earrings-S 66 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Earrings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product66">
                     <img src={sEarrings6} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -944,7 +1540,14 @@ export default function Collection() {
 
 
                         {/* <!-- Earrings-S 67 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Earrings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product67">
                     <img src={sEarrings7} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -957,7 +1560,14 @@ export default function Collection() {
 
 
                         {/* <!-- Earrings-S 68 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Earrings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product68">
                     <img src={sEarrings8} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -970,7 +1580,14 @@ export default function Collection() {
 
 
                         {/* <!-- Earrings-S 69 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Earrings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product69">
                     <img src={sEarrings9} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -983,7 +1600,14 @@ export default function Collection() {
 
 
                         {/* <!-- Earrings-S 70 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Earrings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product70">
                     <img src={sEarrings10} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -996,7 +1620,14 @@ export default function Collection() {
 
 
                         {/* <!-- Earrings-S 71 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Earrings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product71">
                     <img src={sEarrings11} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">
@@ -1009,7 +1640,14 @@ export default function Collection() {
 
 
                         {/* <!-- Earrings-S 72 --> */}
-            <div className="col-md-3 product-card" data-material="silver" data-style="Earrings">
+            <div className="col-md-3 product-card"
+style={{
+display:
+(material === "all" || material === "silver") &&
+(style === "all" || style === "Earrings")
+? "block"
+: "none"
+}}>
                 <div className="card h-100" data-bs-toggle="modal" data-bs-target="#product72">
                     <img src={sEarrings12} className="card-img-top" alt="jewellery"/>
                     <div className="card-body text-center">

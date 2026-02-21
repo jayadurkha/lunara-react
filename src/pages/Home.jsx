@@ -2,6 +2,7 @@ import homeBanner from '../images/homebanner.jpg';
 import necklace from '../images/necklacehome.webp';
 import earrings from '../images/earringshome.webp';
 import ring from '../images/ring1.jpg';
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -11,9 +12,9 @@ function Home() {
         <div className="container">
           <h1 className="display-5 fw-bold">Moonstone Collection</h1>
           <p className="lead">Luxury Jewelry Inspired by the Moon</p>
-          <a href="/collections" className="btn btn-outline-light btn-lg mt-3">
-            Shop Collection
-          </a>
+
+      <Link to="/collections" className="btn btn-outline-light"> Shop Collection</Link>
+          
         </div>
       </section>
 
@@ -33,9 +34,7 @@ function Home() {
                 Lunara creates timeless moonstone jewellery inspired by lunar
                 rhythms, soft light, and quiet luxury.
               </p>
-              <a href="/about" className="editorial-link">
-                Know more About Lunara →
-              </a>
+<Link to="/about">Know more About Lunara →</Link>
             </div>
 
             <div className="col-md-7">
